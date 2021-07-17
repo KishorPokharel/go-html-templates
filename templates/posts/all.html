@@ -1,0 +1,12 @@
+{{ define "title" }}All Posts {{ end }}
+{{ define "body" }}
+{{ range .Posts }}
+<div class="card mt-3">
+  <div class="card-body">
+    <h5 class="card-title">{{.Title}}</h5>
+    <p class="card-text">{{.Body}}</p>
+    <a href="#" class="btn btn-primary">See More</a>
+  </div>
+</div>
+{{ end }}
+{{ end }}
